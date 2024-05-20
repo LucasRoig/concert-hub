@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings 0",
-    "trigger-dev": "pnpm dlx @trigger.dev/cli@latest dev"
+    "trigger-dev": "pnpm dlx @trigger.dev/cli@latest dev",
+    "email-dev": "email dev --dir ./src/emails"
   },
   "dependencies": {
+    "@react-email/components": "0.0.17",
     "@repo/scrappers": "workspace:*",
     "@repo/ui": "workspace:*",
     "@trigger.dev/nextjs": "^2.3.18",
@@ -18,7 +20,8 @@
     "@trigger.dev/sdk": "^2.3.18",
     "next": "^14.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-email": "2.1.2"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.1.1",
